@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+#carouselExampleIndicators {
+    margin-top:100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+   }
+
+   .bg{
+    background-image: url("photos/image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+  
+.div1{
+    background: inherit;
+  
+
+   }
+   .div1:before{
+    content: ‘’;
+
+    background: inherit; 
+    position: absolute;
+    left: -25px;  
+    right: 0;
+    top: -25px;   
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.3);
+    filter: blur(10px);
+   }
+
+.div2{
+    background: inherit;
+  
+}
+.div2:before{
+    content: ‘’;
+
+    background: inherit; 
+    position: absolute;
+    left: -25px;  
+    right: 0;
+    top: -25px;   
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.3);
+    filter: blur(10px);
+   }
+   h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .flex-columngallery{
+    display: inline;
+    margin: auto;
+   border-image: auto;
+max-width: 350px;
+max-height: 350px ;
+
+   }
+  body {
+    height: 100%;
+  }
+  
+  #page-content {
+    flex: 1 0 auto;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+  }
+  
+  /* Other Classes for Page Styling */
+  *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "montserrat";
+  }
+ 
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .card{
+    cursor: pointer;
+    width: 100%;
+    height: 340px
+  }
+  .front,.back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .front img{
+    height: 100%;
+  }
+  .front{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .back{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+  }
+  .back-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+  }
+  .sm{
+    margin: 20px 0;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%
+  }
+  .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  }
+  .card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .tales {
+    width: 100%;
+  }
+  .carousel-inner{
+    width:100% !important;
+    max-height: 500px !important;
+  }
+  /* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
